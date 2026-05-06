@@ -99,14 +99,16 @@ cp src/.env.example src/.env
 
 ```bash
 cd src/
+```
 
 # Step 1: fetch all data (Senate scraper takes ~15-20 min, requires residential IP)
 python main.py --fetch
 
-# OR: download pre-fetched data from Google Drive and skip the fetch step
-# https://drive.google.com/drive/folders/17XTOBd8quzmklovxYI3fAM0-X3Q9DjpN?usp=drive_link
-# Place the downloaded files into the data/ folder, then run:
+OR: download pre-fetched data from Google Drive and skip the fetch step
+https://drive.google.com/drive/folders/17XTOBd8quzmklovxYI3fAM0-X3Q9DjpN?usp=drive_link
+Place the downloaded files into the data/ folder, then run:
 
+```
 # Step 2: run analysis on cached data
 python main.py
 ```
